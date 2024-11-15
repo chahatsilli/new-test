@@ -1,0 +1,29 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+     <h1 class="display-4" style="color: #4CAF50;">SIMPLE CALCULATOR DESIGN</h1>
+    <img src="~/images/myimage.jpeg" alt="Description of Image" width="200" height="150">
+    
+    <h1 class="display-4">Welcome</h1>
+ 
+    <form action="" method="POST">
+    <input type="text" placeholder="Enter Num1" name="num1">
+    <input type="text" placeholder="Enter Num2" name="num2">
+    <br>
+    <input type="submit" value="ADD" name="ADD"><br>
+    <input type="submit" value="SUB" name="SUB"><br>
+    <input type="submit" value="SQU" name="SQU"><br>
+    <input type="submit" value="CUBE" name="CUBE"><br>
+    
+    
+    <p>Result of calculation= @ViewData["summation"]</p>
+
+    <p> THANKS FOR USING CALCULATOR </p>
+      
+ 
+</form>
+</div>
